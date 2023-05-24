@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>r/Pics</h1>
+    </header>
+
+    <nav>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Find What you're Looking for...">
+        </div>
+
+        <div class="size-controller">
+            <label for="size-controller" id="size-label">Size:</label>
+            <select name="size" id="size">
+                <option value="small">Small</option>
+                <option value="medium" selected>Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+
+        <div class="sort-container">
+            <label for="sort" id="sort-label">Sort:</label>
+            <select name="sort" id="sort">
+                <option value="hot">HOT</option>
+                <option value="new">NEW</option>
+                <option value="top">TOP</option>
+                <option value="rising">RISING</option>
+            </select>
+        </div>
+    </nav>
+
+    <div class="container M grid" id="imageContainer">
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
