@@ -38,15 +38,10 @@ function sendReq(req) {
         const imageUrl = image.data.url;
         const imageTitle = image.data.title;
 
-        const imageElement = new Image();
-
         //make sure it is image before creating the image element and is not hosted on external platform like imgur
         if ((imageUrl.endsWith(".jpg") || imageUrl.endsWith(".jpeg") || imageUrl.endsWith(".png")) && !imageUrl.includes("imgur.com")) {
           createImageElement(imageUrl, imageTitle);
         };
-
-        imageElement.src = imageUrl;
-        imageElement.alt = imageTitle;
       });
     })
     .catch(error => {
